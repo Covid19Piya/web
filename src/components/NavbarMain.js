@@ -7,7 +7,7 @@ import Login from './Login'
 
 const Home = () => (
   <div style={{marginTop: '5rem'}}>
-    <h2>Home</h2>
+    <h2>Home Kampoo</h2>
   </div>
 )
 
