@@ -1,11 +1,13 @@
 import React from 'react'
 import NavbarMain from './components/NavbarMain';
+import Request from './components/Request';
 
 function App() {
     return (
-     <div>
-     <NavbarMain />
-     </div>
+        <div className="App">
+            <NavbarMain />
+           
+        </div>
       
     );
 }

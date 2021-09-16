@@ -1,9 +1,11 @@
 import React from 'react'
+//kapu
 import { Navbar, Nav, Container, Dropdown } from 'react-bootstrap'
 import { Route, Switch } from 'react-router-dom'
 import SignupVolunteer from './Volunteer/SignupVolunteer'
 import SignupPatient from './Patient/SignupPatient'
 import Login from './Login'
+import Request from './Request'
 
 const Home = () => (
   <div style={{marginTop: '5rem'}}>
@@ -19,7 +21,7 @@ const News = () => (
 
 const Status = () => (
   <div style={{marginTop: '5rem'}}>
-    <h2>Status</h2>
+    <h2>พพ</h2>
   </div>
 )
 
@@ -34,10 +36,8 @@ function NavbarMain() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="me-auto"></div>
           <Nav>
-            <Nav.Link href="/news">ข่าวสาร</Nav.Link>
-            <Nav.Link href="/status">สถานะ</Nav.Link>
-            <Nav.Link href="assist">อาสาสมัคร</Nav.Link>
-            <Nav.Link href="request">ขอความช่วยเหลือ</Nav.Link>
+            
+            <Nav.Link href="/request">ขอความช่วยเหลือ</Nav.Link>
             <Nav.Link href="/login">เข้าสู่ระบบ</Nav.Link>
             
             <Dropdown>
@@ -55,13 +55,16 @@ function NavbarMain() {
       </Navbar>
       
       <Switch>
+
         <Route exact path="/"><Home /></Route>
         <Route path="/news"><News /></Route>
         <Route path="/status"><Status /></Route>
+
+        <Route path="/request"><Request/></Route>
+        
         <Route path="/signup-patient"><SignupPatient /></Route>
         <Route path="/signup-volunteer"><SignupVolunteer /></Route>
         <Route path="/login"><Login /></Route>
-
         <Route path="/:id">
           <p>ERROR 404</p>
         </Route>
