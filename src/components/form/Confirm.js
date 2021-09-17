@@ -21,8 +21,6 @@ export class Confirm extends Component {
                 <h1 className="mb-5">Confirm</h1>
                 <ul class="list-group">
                     <li class="list-group-item">Name: {name}</li>
-                    <li class="list-group-item">Age: {age}</li>
-                    <li class="list-group-item">Gender: {gender}</li>
                     <li class="list-group-item">Phone Number: {phone}</li>
                     
                     <li class="list-group-item">Facebook URL: <a href={facebook}>{facebook}</a></li>
