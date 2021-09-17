@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap'
 import auth from '../firebase';
 
 const Login = ({ setSession }) => {
-    const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
